@@ -1,6 +1,7 @@
 import requests
+import os
 
-API_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhNjA0MDMwZGM4ZGQzYmIxYWU0ZmY0NWRhMTY4ZmQ5NCIsIm5iZiI6MTc1MTYyMDgwMy41ODgsInN1YiI6IjY4Njc5Y2MzNDI1ODhjNDQzMzdhYjhlNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.QGm9tSLlUVDFigyQ2MGtarkNUEPyyecTG1Z1ccpWL-I"
+API_TOKEN = os.environ.get("TMDB_API_TOKEN", "")
 API_BASE_URL = "https://api.themoviedb.org/3"
 IMAGE_BASE_URL = "https://image.tmdb.org/t/p/"
 
